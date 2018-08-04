@@ -13038,7 +13038,7 @@ document.getElementById('user_handle_reservation_submit').addEventListener('clic
     document.getElementById('user_handle_reservation_email_feedback').innerText = '';
     document.getElementById('user_handle_reservation_handle_feedback').innerText = '';
 
-    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/users/handles/reservations', {
+    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('http://subease-landing.test/users/handles/reservations', {
         email: document.getElementById('user_handle_reservation_email').value,
         handle: document.getElementById('user_handle_reservation_handle').value,
         trade: document.getElementById('user_handle_reservation_trade').value
