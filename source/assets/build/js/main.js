@@ -13032,7 +13032,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('http://subease-landing.test/user/handle/reservation/count ').then(function (response) {
+    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('https://subease.app/user/handle/reservation/count ').then(function (response) {
         document.getElementById('reservation_count').innerText = response.data.count;
     });
 });
@@ -13048,7 +13048,7 @@ document.getElementById('user_handle_reservation_submit').addEventListener('clic
     document.getElementById('user_handle_reservation_email_feedback').innerText = '';
     document.getElementById('user_handle_reservation_handle_feedback').innerText = '';
 
-    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('http://subease-landing.test/users/handles/reservations', {
+    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('https://subease.app/users/handles/reservations', {
         email: emailInput.value,
         handle: handleInput.value,
         trade: document.getElementById('user_handle_reservation_trade').value
