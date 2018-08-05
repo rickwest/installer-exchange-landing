@@ -13031,16 +13031,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // Javascript to handle form submission
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('http://subease-landing.test/user/handle/reservation/count ').then(function (response) {
+        document.getElementById('reservation_count').innerText = response.data.count;
+    });
+});
+
+var emailInput = document.getElementById('user_handle_reservation_email');
+var handleInput = document.getElementById('user_handle_reservation_handle');
+
 document.getElementById('user_handle_reservation_submit').addEventListener('click', function (event) {
     event.preventDefault();
-    document.getElementById('user_handle_reservation_email').classList.remove('is-invalid');
-    document.getElementById('user_handle_reservation_handle').classList.remove('is-invalid');
+    emailInput.classList.remove('is-invalid');
+    handleInput.classList.remove('is-invalid');
+
     document.getElementById('user_handle_reservation_email_feedback').innerText = '';
     document.getElementById('user_handle_reservation_handle_feedback').innerText = '';
 
     __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('http://subease-landing.test/users/handles/reservations', {
-        email: document.getElementById('user_handle_reservation_email').value,
-        handle: document.getElementById('user_handle_reservation_handle').value,
+        email: emailInput.value,
+        handle: handleInput.value,
         trade: document.getElementById('user_handle_reservation_trade').value
     }).then(function (response) {
         document.getElementById('successfully-reserved_handle').innerText = response.data.handle;
@@ -13057,6 +13067,18 @@ document.getElementById('user_handle_reservation_submit').addEventListener('clic
             });
         }
     });
+});
+
+emailInput.addEventListener('change', function () {
+    if (emailInput.classList.contains('is-invalid')) {
+        emailInput.classList.remove('is-invalid');
+    }
+});
+
+document.getElementById('user_handle_reservation_handle').addEventListener('change', function () {
+    if (handleInput.classList.contains('is-invalid')) {
+        handleInput.classList.remove('is-invalid');
+    }
 });
 
 /***/ }),

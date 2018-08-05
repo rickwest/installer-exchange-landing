@@ -81,7 +81,7 @@
 
                     <div id="reserve-your-handle">
                         <p class="mb-4">Subease is under active development and is not yet launched (I'm working as fast as I can!). However, you can still claim your little slice of real estate on subease.app.</p>
-                        <p class="mb-4">Join <span class="font-weight-bold" id="reservation_count">100's</span> other people who have reserved their handle.</p>
+                        <p class="mb-4">Join <span class="font-weight-bold" id="reservation_count"></span> other people who have reserved their handle.</p>
 
                         <div class="mb-3">
                             <form method="post" name="user_handle_reservation">
