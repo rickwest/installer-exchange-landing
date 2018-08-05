@@ -118,6 +118,14 @@
                     <div id="reserve-your-handle-success" style="display: none;">
                         <p class="mb-4">🎉 <span class="font-weight-bold">Sweet!</span> We'll save the @<span id="successfully-reserved_handle" class="font-weight-bold"></span> handle for you.</p>
                         <p class="mb-4">If you don't mind, it would help us a ton if you share this with your followers. Here's a handy pre-populated tweet for you!</p>
+                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                            class="twitter-share-button"
+                            data-size="large"
+                            data-text="🔥 I just reserved my handle on Subease, subcontracting made simple."
+                            data-show-count="false">
+                        Tweet
+                        </a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
             </div>
