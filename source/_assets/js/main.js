@@ -5,7 +5,7 @@ import 'bootstrap/js/dist/modal';
 import axios from 'axios';
 
 document.addEventListener('DOMContentLoaded', () => {
-    axios.get('http://subease-landing.test/user/handle/reservation/count ')
+    axios.get('https://subease-landing.test/user/handle/reservation/count ')
         .then((response) => {
             document.getElementById('reservation_count').innerText = response.data.count;
         })
@@ -22,7 +22,7 @@ document.getElementById('user_handle_reservation_submit').addEventListener('clic
     document.getElementById('user_handle_reservation_email_feedback').innerText = '';
     document.getElementById('user_handle_reservation_handle_feedback').innerText = '';
 
-    axios.post('http://subease-landing.test/users/handles/reservations', {
+    axios.post('https://subease-landing.test/users/handles/reservations', {
         email: emailInput.value,
         handle: handleInput.value,
         trade: document.getElementById('user_handle_reservation_trade').value
