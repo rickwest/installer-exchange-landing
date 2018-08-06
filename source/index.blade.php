@@ -67,7 +67,7 @@
                         <li><strong>Facilitate payment</strong>, so you get paid on time every time!</li>
                         <li>Enable you to <strong>discover local jobs</strong>.</li>
                         <li>Help you <strong>find last minute work</strong> and fill those quiet weeks.</li>
-                        <li>Allow you to <strong>build an online profile</strong> and portfolio of you work.</li>
+                        <li>Allow you to <strong>build an online profile</strong> and portfolio of your work.</li>
                         <li>Manage your qualifications and certifications.</li>
                         <li><strong>Collect reviews</strong>, so contractors know just how good you are!</li>
                         <li>Connect you with contractors and other subbies in your area</li>
