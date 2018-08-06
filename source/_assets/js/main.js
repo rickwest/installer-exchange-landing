@@ -1,5 +1,6 @@
 // Bootstrap Javascript
 import 'bootstrap/js/dist/modal';
+import 'bootstrap/js/dist/collapse';
 
 // Javascript to handle form submission
 import axios from 'axios';
