@@ -6,7 +6,7 @@ import 'bootstrap/js/dist/collapse';
 import axios from 'axios';
 
 document.addEventListener('DOMContentLoaded', () => {
-    axios.get('https://subease.app/user/handle/reservation/count ')
+    axios.get('https://subease.herokuapp.com/user/handle/reservation/count ')
         .then((response) => {
             document.getElementById('reservation_count').innerText = response.data.count;
         })
@@ -23,7 +23,7 @@ document.getElementById('user_handle_reservation_submit').addEventListener('clic
     document.getElementById('user_handle_reservation_email_feedback').innerText = '';
     document.getElementById('user_handle_reservation_handle_feedback').innerText = '';
 
-    axios.post('https://subease.app/users/handles/reservations', {
+    axios.post('https://subease.herokuapp.com/users/handles/reservations', {
         email: emailInput.value,
         handle: handleInput.value,
         trade: document.getElementById('user_handle_reservation_trade').value
