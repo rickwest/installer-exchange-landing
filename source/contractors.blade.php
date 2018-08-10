@@ -52,7 +52,7 @@
                             <form method="post" name="user_handle_reservation">
                                 <div class="form-group">
                                     <label class="font-weight-bold required" for="user_handle_reservation_email">Your Email Address</label>
-                                    <input type="email" id="user_handle_reservation_email" name="user_handle_reservation_email" required="required" placeholder="awesomeboilerinstaller@gmail.com" title="Your Email Address" class="form-control">
+                                    <input type="email" id="user_handle_reservation_email" name="user_handle_reservation_email" required="required" placeholder="john@awesomeplumbingandheating.com" title="Your Email Address" class="form-control">
                                     <div id="user_handle_reservation_email_feedback" class='invalid-feedback'></div>
                                 </div>
                                 <div class="form-group">
@@ -61,7 +61,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">https://www.installerexchange.co.uk/</span>
                                         </div>
-                                        <input type="text" id="user_handle_reservation_handle" name="user_handle_reservation_handle" required="required" placeholder="awesomeboilerinstaller" title="Your handle" class="form-control">
+                                        <input type="text" id="user_handle_reservation_handle" name="user_handle_reservation_handle" required="required" placeholder="awesomeplumbingandheating" title="Your handle" class="form-control">
                                         <div id="user_handle_reservation_handle_feedback" class='invalid-feedback'></div>
                                     </div>
                                 </div>
