@@ -15,8 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
 let emailInput = document.getElementById('user_handle_reservation_email');
 let handleInput = document.getElementById('user_handle_reservation_handle');
 
-document.getElementById('user_handle_reservation_submit').addEventListener('click', (event) => handleForm(event, false));
-// document.getElementById('user_handle_reservation_contractor_submit').addEventListener('click', (event) => handleForm(event, true));
+if (document.getElementById('user_handle_reservation_submit')) {
+    document.getElementById('user_handle_reservation_submit').addEventListener('click', (event) => handleForm(event, false));
+}
+
+if (document.getElementById('user_handle_contractor_reservation_submit')) {
+    document.getElementById('user_handle_contractor_reservation_submit').addEventListener('click', (event) => handleForm(event, true));
+}
 
 const handleForm = (event, contractor) => {
     event.preventDefault();

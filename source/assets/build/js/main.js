@@ -13481,10 +13481,17 @@ document.addEventListener('DOMContentLoaded', function () {
 var emailInput = document.getElementById('user_handle_reservation_email');
 var handleInput = document.getElementById('user_handle_reservation_handle');
 
-document.getElementById('user_handle_reservation_submit').addEventListener('click', function (event) {
-    return handleForm(event, false);
-});
-// document.getElementById('user_handle_reservation_contractor_submit').addEventListener('click', (event) => handleForm(event, true));
+if (document.getElementById('user_handle_reservation_submit')) {
+    document.getElementById('user_handle_reservation_submit').addEventListener('click', function (event) {
+        return handleForm(event, false);
+    });
+}
+
+if (document.getElementById('user_handle_contractor_reservation_submit')) {
+    document.getElementById('user_handle_contractor_reservation_submit').addEventListener('click', function (event) {
+        return handleForm(event, true);
+    });
+}
 
 var handleForm = function handleForm(event, contractor) {
     event.preventDefault();

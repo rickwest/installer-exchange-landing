@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label class="font-weight-bold" for="user_handle_reservation_specialism">Preferred Work</label>
-                                    <select id="user_handle_reservation_specialism" name="user_handle_reservation_specialism" title="Your Specialism" class="form-control">
+                                    <select id="user_handle_reservation_specialism" name="user_handle_reservation_specialism" title="Your preferred type of work" class="form-control">
                                         <option value="">Please select your preferred type of work...</option>
                                         <option value="1">Installation</option>
                                         <option value="2">Service</option>
@@ -103,9 +103,4 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="container text-center">
-            <span class="text-muted">&copy; 2018 Installer Exchange</span>
-        </div>
-    </footer>
 @endsection

@@ -38,6 +38,11 @@
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
         @yield('body')
+        <footer class="footer">
+            <div class="container text-center">
+                <span class="text-muted">&copy; 2018 Installer Exchange</span>
+            </div>
+        </footer>
 
         <script type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
         <!--Start of Tawk.to Script-->
