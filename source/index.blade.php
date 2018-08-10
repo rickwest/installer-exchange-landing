@@ -35,7 +35,7 @@
                     <p class="mb-4">So...<em>Why doesn't a platform exist, where our customers can find us?</em></p>
                     <p class="mb-4">That is why I’m building a directory of the nations best subcontract Heating Engineers.</p>
 
-                    <h2 class="mb-4 font-weight-bold">Introducing Installer Exchange.<br>A nationwide network of verified subcontract Heating Engineers.</span></h2>
+                    <h2 class="mb-4 font-weight-bold">Introducing Installer Exchange.<br>A nationwide network of verified subcontract Heating Engineers.</h2>
                     <p class="mb-4">Registering on Installer Exchange will enable you to:</p>
 
                     <ul class="mb-4">
