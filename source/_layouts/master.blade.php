@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+        <meta name="description" content="Installer Exchange - A nationwide network of verified subcontract Heating Engineers. Helping contractors grow their business and helping installers find more local work.">
+        <meta name="twitter:title" content="Installer Exchange - A nationwide network of verified subcontract Heating Engineers.">
+
+        <meta property="og:image" content="https://www.installerexchange.co.uk/assets/images/installer-exchange-logo.png">
+        <meta property="og:description" content="Installer Exchange - A nationwide network of verified subcontract Heating Engineers. Helping contractors grow their business and helping installers find more local work.">
+        <meta property="og:title" content="Installer Exchange - A nationwide network of verified subcontract Heating Engineers.">
+
         <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicons/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicons/apple-icon-72x72.png">
@@ -46,6 +53,17 @@
 
         <script type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
         <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/5b6d69b7afc2c34e96e7721f/default';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+            })();
+        </script>
         <!--End of Tawk.to Script-->
     </body>
 </html>
