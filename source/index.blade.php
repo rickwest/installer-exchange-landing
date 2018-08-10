@@ -3,107 +3,77 @@
 @section('body')
     <nav class="navbar navbar-expand-lg pt-4">
         <div class="container">
-            <img alt="Subease" class="block" src="/assets/images/subease-logo.png" height="40px">
-            {{--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#subeaseNavbarToggler" aria-controls="subeaseNavbarToggler" aria-expanded="false" aria-label="Toggle navigation">--}}
-                {{--<span class="navbar-toggler-icon"></span>--}}
-            {{--</button>--}}
-            {{--<div class="collapse navbar-collapse" id="subeaseNavbarToggler">--}}
-                {{--<ul class="navbar-nav ml-auto mt-2 mt-lg-0">--}}
-                    {{--<li class="nav-item active">--}}
-                        {{--<a class="nav-link" href="#">Home</a>--}}
-                    {{--</li>--}}
-                    {{--<li class="nav-item">--}}
-                        {{--<a class="nav-link" href="#">Link</a>--}}
-                    {{--</li>--}}
-                    {{--<li class="nav-item">--}}
-                        {{--<a class="nav-link" href="#">Contact</a>--}}
-                    {{--</li>--}}
-                {{--</ul>--}}
-            {{--</div>--}}
+            <img alt="Installer Exchange" class="block" src="/assets/images/installer-exchange-logo.png" height="50px">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#subeaseNavbarToggler" aria-controls="subeaseNavbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="subeaseNavbarToggler">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contractors">Contractor?</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="pt-5 pb-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
-                    <h1 class="mb-4 font-weight-bold">Subcontractor?<br>Fed up of travelling, late payment and days with no work?</h1>
-                    <p class="mb-4">I was too and it made me 😥. </p>
-                    <p class="mb-4">That's why I'm on a mission to change it!</p>
-                    <p class="mb-4">I’ve spent the last 10 years as a subcontract Heating Engineer and during that time I've encountered the same old problems time and time again...</p>
-                    <p class="mb-4">That promise of 6 months work, only to get a text at 10pm on a Sunday night - ‘<strong>jobs gone down, sorry</strong>.’</p>
-                    <p class="mb-4">Working my b*****ks off all week, only to get to Friday, check my bank and nothing’s there. <strong>Paid late again</strong>.</p>
-                    <p class="mb-4">Then there's the travelling. <strong>Up and down the country</strong>, often with no extra pay or fuel money.</p>
-                    <p class="mb-4">Subbie life - <a data-toggle="modal" href="#btg-post-modal">This facebook post</a> pretty much sums it up.</p>
-                    <!-- Modal -->
-                    <div class="modal fade" id="btg-post-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Originally posted in <a href="https://builderstalkgroup.com/" target="_blank">#BuildersTalkGroup</a></h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body text-center">
-                                    <img src="/assets/images/subcontractors.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Modal -->
-                    <p class="mb-4">Ok, so I'm painting a pretty bleak picture, it's definitely not all bad!</p>
-                    <p class="mb-4">But...<em>How do we find the local jobs? Where do we look for last minute work? How do we ensure we're always working for reputable contractors that pay correctly and on time?</em></p>
-                    <h2 class="mb-4 font-weight-bold">Introducing Subease. Subcontracting Made Simple.</h2>
-                    <p class="mb-4">Subease is a Web Application for the Construction Industry. A platform to help the best, hard-working, reliable, subbies (get it?) find work with honest, reputable contractors. Subease will:</p>
+                    <h1 class="mb-4 font-weight-bold">Are you a subcontract Heating Engineer, Gas Installer or Service & Breakdown Guru?</h1>
+                    <p class="mb-4">I am too 😃.</p>
+                    <p class="mb-4">I’ve spent the last 10 years installing boilers, subcontracting to various companies including British Gas.</p>
+                    <p class="mb-4">What many people don’t realise is that, in our industry, subcontracting is a specialist job in itself.</p>
+                    <p class="mb-4">The thing is...not every self-employed Plumbing & Heating Engineer wants to be fitting outside taps, tiling bathrooms and pricing jobs in an evening.</p>
+                    <p class="mb-4">Some of us just want to do the work we enjoy, whilst earning a decent living. In my case that's fitting boilers, but for others it’s breakdown and repair or servicing.</p>
+
+                    <h4 class="mb-4 font-weight-bold">It used to be the jobs that were rare. Now it's us.</h4>
+                    <p class="mb-4">Due to the volatile nature of the industry, more and more installation and maintenance companies are using subcontractors to grow their businesses.</p>
+                    <p class="mb-4">However, as subcontractors, <strong>we can be quite hard to find!</strong></p>
+
+                    <p class="mb-4">We’re not on Checkatrade or My Builder. That’s not the work we do or the type of customer that we work for. Our customers are other businesses.</p>
+                    <p class="mb-4">So...<em>Why doesn't a platform exist, where our customers can find us?</em></p>
+                    <p class="mb-4">That is why I’m building a directory of the nations best subcontract Heating Engineers.</p>
+
+                    <h2 class="mb-4 font-weight-bold">Introducing Installer Exchange.<br>A nationwide network of verified subcontract Heating Engineers.</span></h2>
+                    <p class="mb-4">Registering on Installer Exchange will enable you to:</p>
+
                     <ul class="mb-4">
-                        <li><strong>Facilitate payment</strong>, so you get paid on time every time!</li>
-                        <li>Enable you to <strong>discover local jobs</strong>.</li>
-                        <li>Help you <strong>find last minute work</strong> and fill those quiet weeks.</li>
-                        <li>Allow you to <strong>build an online profile</strong> and portfolio of your work.</li>
-                        <li>Manage your qualifications and certifications.</li>
+                        <li>Build an <strong>online profile and portfolio</strong> of your work.</li>
+                        <li><strong>Get discovered</strong> by contractors with work in your area.</li>
+                        <li><strong>Manage your qualifications</strong> and certifications.</li>
                         <li><strong>Collect reviews</strong>, so contractors know just how good you are!</li>
-                        <li>Connect you with contractors and other subbies in your area</li>
+                        <li><strong>Rate contractors</strong> that you have worked for.</li>
                     </ul>
-                    <p class="mb-4">The best part about Subease? <strong>It's totally FREE</strong>.</p>
-                    <p class="mb-4">For me, Subease is a passion project. I'm building something that I think the Construction Industry needs, but also something that I want myself!</p>
+                    <p class="mb-4"><strong>Installer Exchange is totally FREE</strong>, so you have no reason not to join!</p>
                     <h2 class="mb-4 font-weight-bold">Reserve your handle today</h2>
                     <div id="reserve-your-handle">
-                        <p class="mb-4">Subease is under active development and is not yet launched. However, you can still claim your little slice of real estate on subease.app.</p>
+                        <p class="mb-4">Installer Exchange is under active development and is not yet launched. However, you can still claim your little slice of real estate on installerexchange.co.uk</p>
                         <p class="mb-4">Join <span class="font-weight-bold" id="reservation_count"></span> other people who have already reserved their handle.</p>
                         <div class="mb-3">
                             <form method="post" name="user_handle_reservation">
                                 <div class="form-group">
                                     <label class="font-weight-bold required" for="user_handle_reservation_email">Your Email Address</label>
-                                    <input type="email" id="user_handle_reservation_email" name="user_handle_reservation_email" required="required" placeholder="richard@piedpiper.com" title="Your Email Address" class="form-control">
+                                    <input type="email" id="user_handle_reservation_email" name="user_handle_reservation_email" required="required" placeholder="awesomeboilerinstaller@gmail.com" title="Your Email Address" class="form-control">
                                     <div id="user_handle_reservation_email_feedback" class='invalid-feedback'></div>
                                 </div>
                                 <div class="form-group">
                                     <label class="font-weight-bold required" for="user_handle_reservation_handle">Your Handle</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">https://subease.app/</span>
+                                            <span class="input-group-text">https://www.installerexchange.co.uk/</span>
                                         </div>
-                                        <input type="text" id="user_handle_reservation_handle" name="user_handle_reservation_handle" required="required" placeholder="PP_Plumbers" title="Your handle" class="form-control">
+                                        <input type="text" id="user_handle_reservation_handle" name="user_handle_reservation_handle" required="required" placeholder="awesomeboilerinstaller" title="Your handle" class="form-control">
                                         <div id="user_handle_reservation_handle_feedback" class='invalid-feedback'></div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="font-weight-bold" for="user_handle_reservation_trade">Trade</label>
-                                    <select id="user_handle_reservation_trade" name="user_handle_reservation_trade" title="Your Trade" class="form-control">
-                                        <option value="">Please select your trade...</option>
-                                        <option value="1">Gas/Heating Engineer</option>
-                                        <option value="2">Plumber</option>
-                                        <option value="3">Electrician</option>
-                                        <option value="4">Joiner</option>
-                                        <option value="5">Builder</option>
-                                        <option value="6">Plasterer</option>
-                                        <option value="7">Tiler</option>
-                                        <option value="8">Painter & Decorator</option>
-                                        <option value="9">Labourer</option>
-                                        <option value="10">Other</option>
+                                    <label class="font-weight-bold" for="user_handle_reservation_specialism">Preferred Work</label>
+                                    <select id="user_handle_reservation_specialism" name="user_handle_reservation_specialism" title="Your Specialism" class="form-control">
+                                        <option value="">Please select your preferred type of work...</option>
+                                        <option value="1">Installation</option>
+                                        <option value="2">Service</option>
+                                        <option value="3">Breakdown & Repair</option>
                                     </select>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-lg" id="user_handle_reservation_submit">Reserve my handle</button>
@@ -111,17 +81,23 @@
                         </div>
                         <p class="text-muted small">I will send out periodic updates to keep you in the loop. No spam, guaranteed!</p>
                     </div>
-                    <div id="reserve-your-handle-success" style="display: none;">
+                    <div id="reserve-your-handle-success" class="alert alert-success" style="display: none;">
                         <p class="mb-4">🎉 <span class="font-weight-bold">Sweet!</span> We'll save the @<span id="successfully-reserved_handle" class="font-weight-bold"></span> handle for you.</p>
-                        <p class="mb-4">If you don't mind, it would help us a ton if you share this with your followers. Here's a handy pre-populated tweet for you!</p>
-                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                            class="twitter-share-button"
-                            data-size="large"
-                            data-text="🔥 I just reserved my handle on Subease. Helping subbies find work and get paid! Subcontracting made simple."
-                            data-show-count="false">
-                        Tweet
-                        </a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <p class="mb-4">The success of Installer Exchange relies on building a large network of engineers and contractors.</p>
+                        <p class="mb-4">If you don't mind, it would help us a ton if you share this with your friends, followers and anyone else you know in the trade.</p>
+
+                        <div class="d-flex justify-content-start">
+                            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                               class="twitter-share-button"
+                               data-size="large"
+                               data-text="🔥 I just reserved my handle on Installer Exchange. A nationwide network of verified subcontract Heating Engineers."
+                               data-show-count="false"
+                            >Tweet
+                            </a>
+                            <div class="fb-share-button ml-2" data-href="https://www.installerexchange.co.uk" data-layout="button" data-size="large" data-mobile-iframe="true">
+                                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.installerexchange.co.uk%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -129,7 +105,7 @@
     </div>
     <footer class="footer">
         <div class="container text-center">
-            <span class="text-muted">&copy; 2018 Subease</span>
+            <span class="text-muted">&copy; 2018 Installer Exchange</span>
         </div>
     </footer>
 @endsection

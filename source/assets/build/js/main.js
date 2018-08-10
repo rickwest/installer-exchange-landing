@@ -13473,7 +13473,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('https://subease.app/user/handle/reservation/count ').then(function (response) {
+    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('http://subease-landing.test/handles/installer/reservations/count').then(function (response) {
         document.getElementById('reservation_count').innerText = response.data.count;
     });
 });
@@ -13482,17 +13482,20 @@ var emailInput = document.getElementById('user_handle_reservation_email');
 var handleInput = document.getElementById('user_handle_reservation_handle');
 
 document.getElementById('user_handle_reservation_submit').addEventListener('click', function (event) {
+    return handleForm(event, false);
+});
+// document.getElementById('user_handle_reservation_contractor_submit').addEventListener('click', (event) => handleForm(event, true));
+
+var handleForm = function handleForm(event, contractor) {
     event.preventDefault();
     emailInput.classList.remove('is-invalid');
     handleInput.classList.remove('is-invalid');
 
-    document.getElementById('user_handle_reservation_email_feedback').innerText = '';
-    document.getElementById('user_handle_reservation_handle_feedback').innerText = '';
-
-    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('https://subease.app/users/handles/reservations', {
+    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('http://subease-landing.test/handles/installer/reservations', {
         email: emailInput.value,
         handle: handleInput.value,
-        trade: document.getElementById('user_handle_reservation_trade').value
+        specialism: document.getElementById('user_handle_reservation_specialism').value,
+        contractor: contractor
     }).then(function (response) {
         document.getElementById('successfully-reserved_handle').innerText = response.data.handle;
         document.getElementById('reserve-your-handle-success').style.display = 'block';
@@ -13508,7 +13511,7 @@ document.getElementById('user_handle_reservation_submit').addEventListener('clic
             });
         }
     });
-});
+};
 
 emailInput.addEventListener('change', function () {
     if (emailInput.classList.contains('is-invalid')) {
@@ -13516,7 +13519,7 @@ emailInput.addEventListener('change', function () {
     }
 });
 
-document.getElementById('user_handle_reservation_handle').addEventListener('change', function () {
+handleInput.addEventListener('change', function () {
     if (handleInput.classList.contains('is-invalid')) {
         handleInput.classList.remove('is-invalid');
     }

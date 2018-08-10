@@ -6,7 +6,7 @@ import 'bootstrap/js/dist/collapse';
 import axios from 'axios';
 
 document.addEventListener('DOMContentLoaded', () => {
-    axios.get('https://subease.herokuapp.com/user/handle/reservation/count ')
+    axios.get('http://subease-landing.test/handles/installer/reservations/count')
         .then((response) => {
             document.getElementById('reservation_count').innerText = response.data.count;
         })
@@ -15,18 +15,20 @@ document.addEventListener('DOMContentLoaded', () => {
 let emailInput = document.getElementById('user_handle_reservation_email');
 let handleInput = document.getElementById('user_handle_reservation_handle');
 
-document.getElementById('user_handle_reservation_submit').addEventListener('click', (event) => {
+document.getElementById('user_handle_reservation_submit').addEventListener('click', (event) => handleForm(event, false));
+// document.getElementById('user_handle_reservation_contractor_submit').addEventListener('click', (event) => handleForm(event, true));
+
+const handleForm = (event, contractor) => {
     event.preventDefault();
     emailInput.classList.remove('is-invalid');
     handleInput.classList.remove('is-invalid');
 
-    document.getElementById('user_handle_reservation_email_feedback').innerText = '';
-    document.getElementById('user_handle_reservation_handle_feedback').innerText = '';
-
-    axios.post('https://subease.herokuapp.com/users/handles/reservations', {
-        email: emailInput.value,
-        handle: handleInput.value,
-        trade: document.getElementById('user_handle_reservation_trade').value
+    axios
+        .post('http://subease-landing.test/handles/installer/reservations', {
+            email: emailInput.value,
+            handle: handleInput.value,
+            specialism: document.getElementById('user_handle_reservation_specialism').value,
+            contractor: contractor
         })
         .then((response) => {
             document.getElementById('successfully-reserved_handle').innerText = response.data.handle;
@@ -44,7 +46,7 @@ document.getElementById('user_handle_reservation_submit').addEventListener('clic
                 });
             }
         });
-});
+};
 
 emailInput.addEventListener('change', () => {
     if (emailInput.classList.contains('is-invalid')) {
@@ -52,7 +54,7 @@ emailInput.addEventListener('change', () => {
     }
 });
 
-document.getElementById('user_handle_reservation_handle').addEventListener('change', () => {
+handleInput.addEventListener('change', () => {
     if (handleInput.classList.contains('is-invalid')) {
         handleInput.classList.remove('is-invalid')
     }
