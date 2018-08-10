@@ -1,12 +1,11 @@
 // Bootstrap Javascript
-import 'bootstrap/js/dist/modal';
 import 'bootstrap/js/dist/collapse';
 
 // Javascript to handle form submission
 import axios from 'axios';
 
 document.addEventListener('DOMContentLoaded', () => {
-    axios.get('http://subease-landing.test/handles/installer/reservations/count')
+    axios.get('https://subease.herokuapp.com/handles/installer/reservations/count')
         .then((response) => {
             document.getElementById('reservation_count').innerText = response.data.count;
         })
@@ -29,7 +28,7 @@ const handleForm = (event, contractor) => {
     handleInput.classList.remove('is-invalid');
 
     axios
-        .post('http://subease-landing.test/handles/installer/reservations', {
+        .post('https://subease.herokuapp.com/handles/installer/reservations', {
             email: emailInput.value,
             handle: handleInput.value,
             specialism: document.getElementById('user_handle_reservation_specialism').value,
